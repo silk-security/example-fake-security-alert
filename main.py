@@ -5,7 +5,8 @@ import base64
 
 def main():
     my_cool_input = input('Enter something fun')
-    eval(my_cool_input)
+    res = eval(my_cool_input)
+    return res
 
 def another_function():
     pass
@@ -18,4 +19,4 @@ def code_execution(request):
         exec("setname('%s')" % first_name)
         
 if __name__ == '__main__':
-    main()
+    code_execution(main())
